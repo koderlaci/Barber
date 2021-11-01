@@ -1,0 +1,38 @@
+.calendar-container{
+    height: 30%;
+    width: 100%;
+}
+
+.demo-inline-calendar-card {
+    width: 450px;
+}
+
+.timetable-container{
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    margin-bottom: 5%;
+}
+
+.timetable-item{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: white;
+}
+
+.next-btn button{
+    font-size: 2vw;
+    margin-bottom: 5%;
+    background-color: black;
+    color: White;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: white;
+}

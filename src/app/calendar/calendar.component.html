@@ -1,0 +1,29 @@
+<!--<mat-form-field>
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker]="picker">
+    <mat-datepicker-toggle [for]="picker" matSuffix></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+<div class="calendar-container" fxLayout="column" fxLayoutAlign="center center">
+    <mat-card class="demo-inline-calendar-card">
+        <mat-calendar (selectedChange)="selected = $event"></mat-calendar>
+    </mat-card>
+</div>-->
+
+<div class="calendar-container" fxLayout="column" fxLayoutAlign="center center">
+    <h1>Choose a date!</h1>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepickerFilter]="myFilter" [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+</div>
+<div fxLayoutAlign="center center">
+    <div class="timetable-container">
+        <div (click)="clicked()" *ngFor="let date of dates" class="timetable-item hover" fxLayoutAlign="center center">{{date}}</div>
+    </div>
+</div>
+<div *ngIf="isClicked" class="next-btn" fxLayoutAlign="center center">
+    <button routerLink="/Booking" mat-raised-button>Next</button>
+</div>

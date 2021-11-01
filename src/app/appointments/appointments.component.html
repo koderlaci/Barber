@@ -1,0 +1,14 @@
+<div *ngIf="!(man || woman)" class="Appointments-container" fxLayoutAlign="center center">
+    <div class="Services">
+        <a (click)="manClicked()">
+            <div class="man hover" fxLayoutAlign="center center">Man</div>
+        </a>
+        <a (click)="womanClicked()">
+            <div class="woman hover" fxLayoutAlign="center center">Woman</div>
+        </a>
+    </div>
+</div>
+
+<app-man-appointment *ngIf="man"></app-man-appointment>
+
+<app-woman-appointment *ngIf="woman"></app-woman-appointment>

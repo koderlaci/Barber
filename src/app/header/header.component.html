@@ -1,0 +1,42 @@
+<mat-toolbar>
+    <mat-toolbar-row fxLayoutAlign="space-between center">
+      <div [ngClass]="deviceXs ? 'left-padding' : 'no-left-padding'">
+        <span>The Imaginary Barber</span>
+        <a routerLink="/Home">
+          <button *ngIf="!deviceXs" mat-button>
+            Home
+          </button>
+        </a>
+        <a routerLink="/Appointments">
+          <button *ngIf="!deviceXs" mat-button>
+            Appointments
+          </button>
+        </a>
+        <a routerLink="/Contact">
+          <button *ngIf="!deviceXs" mat-button>
+            Contact
+          </button>
+        </a>
+      </div>
+      <button mat-icon-button>
+        <mat-icon>menu</mat-icon>
+      </button>
+    </mat-toolbar-row>
+    <mat-toolbar-row *ngIf="deviceXs" fxLayoutAlign="space-between center">
+      <a routerLink="/Home">
+        <button *ngIf="deviceXs" mat-button>
+          Home
+        </button>
+      </a>
+      <a routerLink="/Appointments">
+        <button *ngIf="deviceXs" mat-button>
+          Appointments
+        </button>
+      </a>
+      <a routerLink="/Contact">
+        <button *ngIf="deviceXs" mat-button>
+          Contact
+        </button>
+      </a>
+    </mat-toolbar-row>
+</mat-toolbar>

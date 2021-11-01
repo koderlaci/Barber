@@ -1,0 +1,28 @@
+<div class="booking-container" fxLayout="column" fxLayoutAlign="center center">
+    <h1>Do you have an account?</h1>
+    <div class="login-container" fxLayout="column" fxLayoutAlign="center center">
+        <mat-form-field appearance="fill">
+            <mat-label>Enter your email</mat-label>
+            <input matInput placeholder="pat@example.com" [formControl]="email" required>
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+        
+        <mat-form-field appearance="fill">
+            <mat-label>Enter your password</mat-label>
+            <input matInput [type]="'password'" required>
+        </mat-form-field>
+
+        <button mat-raised-button>
+            Login
+        </button>
+    </div>
+    <p>If you do not have an account, you can create a new or continue as a guest</p>
+    <div class="btn-container" fxLayoutAlign="center center">
+        <button routerLink="/Registration" mat-raised-button>
+            Registration
+        </button>
+        <button mat-raised-button>
+            Guest
+        </button>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<div class="registration-container" fxLayout="column" fxLayoutAlign="center center">
+    <div fxLayout="row">
+        <div class="label-item">First Name</div>
+        <mat-form-field appearance="fill">
+            <input matInput placeholder="John" required>
+        </mat-form-field>
+    </div>
+    <div fxLayout="row">
+        <div class="label-item">Last Name</div>
+        <mat-form-field appearance="fill">
+            <input matInput placeholder="Doe" required>
+        </mat-form-field>
+    </div>
+    <div fxLayout="row">
+        <div class="label-item">Telephone</div>
+        <mat-form-field appearance="fill">
+            <input matInput placeholder="06 12 345 6789" required>
+        </mat-form-field>
+    </div>
+    <div fxLayout="row">
+        <div class="label-item">Email</div>
+        <mat-form-field appearance="fill">
+            <input matInput placeholder="John@example.com" [formControl]="email" required>
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+    </div>
+    <div fxLayout="row">
+        <div class="label-item">Password</div>
+        <mat-form-field appearance="fill">
+            <input matInput placeholder="********" [type]="'password'" required>
+        </mat-form-field>
+    </div>
+    <button mat-raised-button>
+        Registration
+    </button>
+</div>
