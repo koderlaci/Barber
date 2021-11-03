@@ -13,6 +13,7 @@ export class CalendarComponent implements OnInit {
     
   }
 
+  appointmentDate: Date;
   selected = new Date();
   isClicked = false;
 

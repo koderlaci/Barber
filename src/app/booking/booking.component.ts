@@ -23,4 +23,9 @@ export class BookingComponent implements OnInit {
     return this.email.hasError('email') ? 'Not a valid email' : '';
   }
 
+  onSubmit(value: any){
+    //this.enrollmentService.enroll(value)
+    console.log(value);
+  }
+
 }

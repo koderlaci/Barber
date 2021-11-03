@@ -1,3 +1,20 @@
+.navbar{
+    height: 100%;
+    background-color: transparent;
+    position: fixed;
+    right: 0;
+    padding: 20px;
+}
+
+.icon-container{
+    height: 100%;
+}
+
+img{
+    width: 25px;
+    padding-bottom: 50px;
+}
+
 .left-padding{
     padding-left: 20%;
 }
@@ -16,4 +33,8 @@ span{
 
 mat-icon{
     color: white;
+}
+
+a{
+    color: black;
 }

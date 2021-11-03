@@ -1,4 +1,4 @@
-<mat-toolbar>
+<!--<mat-toolbar>
     <mat-toolbar-row fxLayoutAlign="space-between center">
       <div [ngClass]="deviceXs ? 'left-padding' : 'no-left-padding'">
         <span>The Imaginary Barber</span>
@@ -39,4 +39,35 @@
         </button>
       </a>
     </mat-toolbar-row>
-</mat-toolbar>
+</mat-toolbar>-->
+
+<div class="navbar" fxLayout="column" fxLayoutAlign="start center">
+    <div class="hamburger">
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <a mat-menu-item routerLink="/Home">
+          <button mat-button>
+            Home
+          </button>
+        </a>
+        <a mat-menu-item routerLink="/Appointments">
+          <button mat-button>
+            Appointments
+          </button>
+        </a>
+        <a mat-menu-item routerLink="/Contact">
+          <button mat-button>
+            Contact
+          </button>
+        </a>
+      </mat-menu>
+    </div>
+
+    <div class="icon-container" fxLayout="column" fxLayoutAlign="center center">
+      <img src="../../assets/Facebook - Negative.png">
+      <img src="../../assets/Instagram - Negative.png">
+      <img src="../../assets/TikTok - Negative.png">
+    </div>
+</div>

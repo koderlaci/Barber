@@ -1,10 +1,10 @@
 <div *ngIf="!(man || woman)" class="Appointments-container" fxLayoutAlign="center center">
     <div class="Services">
         <a (click)="manClicked()">
-            <div class="man hover" fxLayoutAlign="center center">Man</div>
+            <button mat-raised-button class="man hover" fxLayoutAlign="center center">Man</button>
         </a>
         <a (click)="womanClicked()">
-            <div class="woman hover" fxLayoutAlign="center center">Woman</div>
+            <button mat-raised-button class="woman hover" fxLayoutAlign="center center">Woman</button>
         </a>
     </div>
 </div>

@@ -10,20 +10,22 @@
     </mat-card>
 </div>-->
 
-<div class="calendar-container" fxLayout="column" fxLayoutAlign="center center">
-    <h1>Choose a date!</h1>
-    <mat-form-field class="example-full-width" appearance="fill">
-        <mat-label>Choose a date</mat-label>
-        <input matInput [matDatepickerFilter]="myFilter" [matDatepicker]="picker">
-        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
-    </mat-form-field>
-</div>
-<div fxLayoutAlign="center center">
-    <div class="timetable-container">
-        <div (click)="clicked()" *ngFor="let date of dates" class="timetable-item hover" fxLayoutAlign="center center">{{date}}</div>
+<div class="calendar-container">
+    <div class="datepicker-container" fxLayout="column" fxLayoutAlign="center center">
+        <p class="calendar-title" >Choose a date!</p>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepickerFilter]="myFilter" [matDatepicker]="picker" [(ngModel)]="appointmentDate">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
     </div>
-</div>
-<div *ngIf="isClicked" class="next-btn" fxLayoutAlign="center center">
-    <button routerLink="/Booking" mat-raised-button>Next</button>
+    <div class="timetable" fxLayoutAlign="center center">
+        <div class="timetable-container">
+            <div (click)="clicked()" *ngFor="let date of dates" class="timetable-item hover" fxLayoutAlign="center center">{{date}}</div>
+        </div>
+    </div>
+    <div *ngIf="isClicked" class="next-btn" fxLayoutAlign="center center">
+        <button routerLink="/Booking" mat-raised-button class="hover">Continue</button>
+    </div>
 </div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { EnrollmentService } from '../enrollment.service';
 
 @Component({
   selector: 'app-registration',
@@ -8,7 +9,7 @@ import { FormControl, Validators } from '@angular/forms';
 })
 export class RegistrationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private enrollmentService: EnrollmentService) { }
 
   ngOnInit(): void {
   }
@@ -21,5 +22,10 @@ export class RegistrationComponent implements OnInit {
     }
 
     return this.email.hasError('email') ? 'Not a valid email' : '';
+  }
+
+  onSubmit(value: any){
+    //this.enrollmentService.enroll(value)
+    console.log(value);
   }
 }

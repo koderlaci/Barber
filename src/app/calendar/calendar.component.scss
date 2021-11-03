@@ -1,10 +1,24 @@
 .calendar-container{
-    height: 30%;
+    height: 100%;
     width: 100%;
+    background-image: url("../../assets/empty.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.datepicker-container{
+    height: 20%;
+    width: 100%;
+    padding-top: 2%;
 }
 
 .demo-inline-calendar-card {
     width: 450px;
+}
+
+.timetable{
+    width: 100%;
 }
 
 .timetable-container{
@@ -13,26 +27,37 @@
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 20px;
     grid-column-gap: 20px;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 .timetable-item{
     width: 100%;
-    height: 80px;
-    background-color: black;
+    height: 50px;
+    background-color: transparent;
     color: white;
+    border: rgb(255, 255, 255) 2px solid;
 }
 
-.next-btn button{
-    font-size: 2vw;
-    margin-bottom: 5%;
-    background-color: black;
-    color: White;
+.next-btn{
+    width: 100%;
 }
 
 button{
     width: 200px;
     height: 50px;
-    background-color: black;
+    background-color: transparent;
+    color: white;
+    border: white 1px solid;
+}
+
+.calendar-title{
+    font-size: 20px;
+}
+
+mat-datepicker-toggle{
+    color: white;
+}
+
+mat-label{
     color: white;
 }

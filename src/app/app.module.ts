@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';  
-import {FlexLayoutModule} from "@angular/flex-layout";
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -25,8 +26,10 @@ import { MatNativeDateModule, MatRippleModule } from '@angular/material/core';
 import { BookingComponent } from './booking/booking.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { RegistrationComponent } from './registration/registration.component';
+import {MatMenuModule} from '@angular/material/menu';
 
 const appRoutes: Routes = [
+  {path: '', component: HomeComponent},
   {path: 'Home', component: HomeComponent},
   {path: 'Appointments', component: AppointmentsComponent},
   {path: 'Contact', component: ContactComponent},
@@ -66,9 +69,11 @@ const appRoutes: Routes = [
     MatRippleModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
+    MatMenuModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

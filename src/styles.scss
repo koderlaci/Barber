@@ -1,8 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300&display=swap');
 
+*{
+    font-family:'Red Rose', cursive;
+}
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; }
 a{
     color: white;
     text-decoration: none;
