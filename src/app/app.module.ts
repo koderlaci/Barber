@@ -27,6 +27,7 @@ import { BookingComponent } from './booking/booking.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { RegistrationComponent } from './registration/registration.component';
 import {MatMenuModule} from '@angular/material/menu';
+import { GuestComponent } from './guest/guest.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -37,7 +38,8 @@ const appRoutes: Routes = [
   {path: 'Woman', component: WomanAppointmentComponent},
   {path: 'Calendar', component: CalendarComponent},
   {path: 'Booking', component: BookingComponent},
-  {path: 'Registration', component: RegistrationComponent}
+  {path: 'Registration', component: RegistrationComponent},
+  {path: 'Guest', component: GuestComponent}
 ];
 
 @NgModule({
@@ -51,7 +53,8 @@ const appRoutes: Routes = [
     WomanAppointmentComponent,
     CalendarComponent,
     BookingComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    GuestComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,34 @@
+<div class="guest-container" fxLayoutAlign="center center">
+    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+        <div fxLayout="row">
+            <div class="label-item">First Name</div>
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="John" name="firstName" ngModel required>
+            </mat-form-field>
+        </div>
+        <div fxLayout="row">
+            <div class="label-item">Last Name</div>
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Doe" name="lastName" ngModel required>
+            </mat-form-field>
+        </div>
+        <div fxLayout="row">
+            <div class="label-item">Telephone</div>
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="06 12 345 6789" name="telephone" ngModel required>
+            </mat-form-field>
+        </div>
+        <div fxLayout="row">
+            <div class="label-item">Email</div>
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="John@example.com" name="email" ngModel required>
+                <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+        </div>
+        <div fxLayoutAlign="center center">
+            <button mat-raised-button type="submit" class="hover">
+                Continue as guest
+            </button>
+        </div>
+    </form>
+</div>

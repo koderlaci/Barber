@@ -1,0 +1,28 @@
+.guest-container{
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/empty.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.label-item{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    border: white 1px solid;
+}
+
+input::placeholder{
+    color: grey;
+}
