@@ -10,7 +10,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    padding: 30px;
+    margin: 30px;
     color: white;
     font-size: 30px;
 }
@@ -38,4 +38,18 @@
     background-color: transparent;
     color: white;
     border: white 1px solid;
+}
+
+@media only screen and (max-width: 870px) {
+    .home-text {
+      width: 100%;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .home-text-title {
+        font-size: 25px;
+    }
+    .home-text-subtitle {
+        font-size: 10px;
+    }
 }

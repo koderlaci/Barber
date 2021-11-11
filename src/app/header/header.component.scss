@@ -3,7 +3,15 @@
     background-color: transparent;
     position: fixed;
     right: 0;
-    padding: 20px;
+    margin: 20px;
+}
+
+.socialmedia{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 40px;
+    margin: 20px;
 }
 
 .icon-container{
@@ -20,4 +28,13 @@ img{
 
 mat-icon{
     color: white;
+}
+
+@media only screen and (max-width: 540px) {
+    img {
+        display: none;
+    }
+    .socialmedia{
+        display: block;
+    }
 }

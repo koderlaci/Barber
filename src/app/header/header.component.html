@@ -75,6 +75,29 @@
       </mat-menu>
     </div>
 
+    <div class="socialmedia">
+      <button mat-icon-button [matMenuTriggerFor]="social">
+        <mat-icon>notifications</mat-icon>
+      </button>
+      <mat-menu #social="matMenu">
+        <a mat-menu-item href="https://www.facebook.com/" target="_blank">
+          <button mat-button>
+            Facebook
+          </button>
+        </a>
+        <a mat-menu-item href="https://www.instagram.com/" target="_blank">
+          <button mat-button>
+            Instagram
+          </button>
+        </a>
+        <a mat-menu-item href="https://www.tiktok.com/" target="_blank">
+          <button mat-button>
+            TikTok
+          </button>
+        </a>
+      </mat-menu>
+  </div>
+
     <div class="icon-container" fxLayout="column" fxLayoutAlign="center center">
       <a href="https://www.facebook.com/" target="_blank" class="icon">
         <img src="../../assets/Facebook - Negative.png">
