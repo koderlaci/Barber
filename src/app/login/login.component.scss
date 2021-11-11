@@ -1,0 +1,33 @@
+.booking-container{
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/empty.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.login-container{
+    margin-bottom: 2%;
+}
+
+.btn-container{
+    width: 100%;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    margin: 3%;
+    background-color: transparent;
+    color: white;
+    border: white 1px solid;
+}
+
+mat-label{
+    color: white;
+}
+
+a{
+    color: rgb(65, 65, 119);
+}
