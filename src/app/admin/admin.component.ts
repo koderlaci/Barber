@@ -16,5 +16,4 @@ export class AdminComponent implements OnInit {
   CreateBarberService(name: string, price: number, time: number){
     var tempService = new BarberServiceType(name, price, time);
   }
-
 }
