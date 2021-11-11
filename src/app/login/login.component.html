@@ -1,7 +1,7 @@
-<div class="booking-container" fxLayout="column" fxLayoutAlign="center center">
+<div class="login-container" fxLayout="column" fxLayoutAlign="center center">
     <h1>Login</h1>
     <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
-        <div class="login-container" fxLayout="column" fxLayoutAlign="center center">
+        <div fxLayout="column" fxLayoutAlign="center center">
             <mat-form-field appearance="fill">
                 <mat-label>Enter your email</mat-label>
                 <input matInput placeholder="pat@example.com" name="email" ngModel required>
