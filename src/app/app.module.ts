@@ -29,6 +29,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import {MatMenuModule} from '@angular/material/menu';
 import { GuestComponent } from './guest/guest.component';
 import { LoginComponent } from './login/login.component';
+import { AdminComponent } from './admin/admin.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -41,7 +42,8 @@ const appRoutes: Routes = [
   {path: 'Booking', component: BookingComponent},
   {path: 'Registration', component: RegistrationComponent},
   {path: 'Guest', component: GuestComponent},
-  {path: 'Login', component: LoginComponent}
+  {path: 'Login', component: LoginComponent},
+  {path: 'Admin', component: AdminComponent}
 ];
 
 @NgModule({
@@ -57,7 +59,8 @@ const appRoutes: Routes = [
     BookingComponent,
     RegistrationComponent,
     GuestComponent,
-    LoginComponent
+    LoginComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
